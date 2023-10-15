@@ -1,3 +1,7 @@
+# Update links to use absolute path url to cdn site
+
+echo "Aleady update! This script is for information purpose"
+exit
 
 f_list=$(find . -type f -name 'index.html' -exec echo {} \;)
 IFS=$'\n'
