@@ -1,5 +1,29 @@
-h1, h1 a {
-    font-size: 1.5rem;
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    background-color: #eee;
+    width: 100%;
+    height: 3rem;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    margin: 0;
+    border-bottom: 1px solid gray;
+}
+
+div#main {
+    padding-top: 4rem
+}
+
+h1,
+h1 a {
+    font-size: 1.2em;
+    padding: 0;
+    margin:0;
 }
 
 h1 a:visited {
@@ -18,4 +42,10 @@ a:hover {
 ul li {
     list-style-type: none;
     line-height: 2.5rem;
+}
+
+footer {
+    border-top: 1px solid gray;
+    /* background-color: #eee; */
+    padding: 1rem;
 }
