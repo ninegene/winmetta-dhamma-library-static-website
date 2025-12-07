@@ -11,7 +11,7 @@ for f in $f_list; do
     # https://stackoverflow.com/questions/296536/how-to-urlencode-data-for-curl-command
     path=$(printf "$path" | jq -sRr '@uri')
     echo "--- d: $d     f: $f    path: $path"
-    sed -re "s|<a href=\"(.+)\.pdf\"|<a href=\"https://dhamma-library.cdn.winmetta.org/$path/\1.pdf\"|g" "$f" > "$d/index.htm"
+    sed -re "s|<a href=\"(.+)\.pdf\"|<a href=\"https://dhamma-library.b-cdn.net/$path/\1.pdf\"|g" "$f" > "$d/index.htm"
     #[[ -f "$d/index.html.bak" ]] || mv -iv "$d/index.html" "$d/index.html.bak"
     #mv -iv "$d/index.html.bak" "$d/index.html"
     mv -v "$d/index.htm" "$d/index.html"
